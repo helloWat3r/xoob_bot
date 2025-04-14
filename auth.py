@@ -13,7 +13,7 @@ async def auth_user() -> str | None:
         if not init_data:
             raise ValueError("Переменная окружения INIT_DATA не установлена или пустая.")
 
-        url = 'https://game-api-v2.xoob.gg/api/auth/auth'
+        url = 'https://game-api-v2.xoob.gg/api/auth'
 
         data = {
             "initData": init_data
